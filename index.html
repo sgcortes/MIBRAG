@@ -31,11 +31,12 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
         <script src="data/LIMIT_1.js"></script>
-        <script src="data/3111Recreation_2.js"></script>
-        <script src="data/2261Carbonsequestration_3.js"></script>
-        <script src="data/2262Localclimateregulation_4.js"></script>
-        <script src="data/1152Fibreprovision_5.js"></script>
-        <script src="data/1111FoodProvision_6.js"></script>
+        <script src="data/MIBRAGCLC_2.js"></script>
+        <script src="data/3111Recreation_3.js"></script>
+        <script src="data/2261Carbonsequestration_4.js"></script>
+        <script src="data/2262Localclimateregulation_5.js"></script>
+        <script src="data/1152Fibreprovision_6.js"></script>
+        <script src="data/1111FoodProvision_7.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -137,40 +138,52 @@
                         <td colspan="2">' + (feature.properties['Desc_CLC3_'] !== null ? Autolinker.link(feature.properties['Desc_CLC3_'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['AREA [ha]_'] !== null ? Autolinker.link(feature.properties['AREA [ha]_'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">AREA [ha]_</th>\
+                        <td>' + (feature.properties['AREA [ha]_'] !== null ? Autolinker.link(feature.properties['AREA [ha]_'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Perimete_1'] !== null ? Autolinker.link(feature.properties['Perimete_1'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">Perimete_1</th>\
+                        <td>' + (feature.properties['Perimete_1'] !== null ? Autolinker.link(feature.properties['Perimete_1'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['AREAbyCL_1'] !== null ? Autolinker.link(feature.properties['AREAbyCL_1'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">AREAbyCL_1</th>\
+                        <td>' + (feature.properties['AREAbyCL_1'] !== null ? Autolinker.link(feature.properties['AREAbyCL_1'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['ID Field_2'] !== null ? Autolinker.link(feature.properties['ID Field_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">ID Field_2</th>\
+                        <td>' + (feature.properties['ID Field_2'] !== null ? Autolinker.link(feature.properties['ID Field_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['AreaCLC3_1'] !== null ? Autolinker.link(feature.properties['AreaCLC3_1'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">AreaCLC3_1</th>\
+                        <td>' + (feature.properties['AreaCLC3_1'] !== null ? Autolinker.link(feature.properties['AreaCLC3_1'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['AreaCLC3_2'] !== null ? Autolinker.link(feature.properties['AreaCLC3_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">AreaCLC3_2</th>\
+                        <td>' + (feature.properties['AreaCLC3_2'] !== null ? Autolinker.link(feature.properties['AreaCLC3_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Desc_CLC2_'] !== null ? Autolinker.link(feature.properties['Desc_CLC2_'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">Desc_CLC2_</th>\
+                        <td>' + (feature.properties['Desc_CLC2_'] !== null ? Autolinker.link(feature.properties['Desc_CLC2_'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['1111_2'] !== null ? Autolinker.link(feature.properties['1111_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">1111_2</th>\
+                        <td>' + (feature.properties['1111_2'] !== null ? Autolinker.link(feature.properties['1111_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['1152_2'] !== null ? Autolinker.link(feature.properties['1152_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">1152_2</th>\
+                        <td>' + (feature.properties['1152_2'] !== null ? Autolinker.link(feature.properties['1152_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['2261_2'] !== null ? Autolinker.link(feature.properties['2261_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">2261_2</th>\
+                        <td>' + (feature.properties['2261_2'] !== null ? Autolinker.link(feature.properties['2261_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['2262_2'] !== null ? Autolinker.link(feature.properties['2262_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">2262_2</th>\
+                        <td>' + (feature.properties['2262_2'] !== null ? Autolinker.link(feature.properties['2262_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['3111_2'] !== null ? Autolinker.link(feature.properties['3111_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3111_2</th>\
+                        <td>' + (feature.properties['3111_2'] !== null ? Autolinker.link(feature.properties['3111_2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -186,7 +199,7 @@
                 lineJoin: 'miter',
                 weight: 7.0, 
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_LIMIT_1');
@@ -194,7 +207,7 @@
         map.getPane('pane_LIMIT_1').style['mix-blend-mode'] = 'normal';
         var layer_LIMIT_1 = new L.geoJson(json_LIMIT_1, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_LIMIT_1',
             layerName: 'layer_LIMIT_1',
             pane: 'pane_LIMIT_1',
@@ -203,7 +216,7 @@
         });
         bounds_group.addLayer(layer_LIMIT_1);
         map.addLayer(layer_LIMIT_1);
-        function pop_3111Recreation_2(feature, layer) {
+        function pop_MIBRAGCLC_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
@@ -275,11 +288,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_3111Recreation_2_0(feature) {
-            switch(String(feature.properties['3111'])) {
-                case '0.0':
+        function style_MIBRAGCLC_2_0(feature) {
+            switch(String(feature.properties['CLC_lv3'])) {
+                case '121':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -288,13 +301,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(0,0,4,0.508)',
+                fillColor: 'rgba(204,77,255,0.508)',
                 interactive: true,
             }
                     break;
-                case '463.0':
+                case '141':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -303,13 +316,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(2,2,14,0.508)',
+                fillColor: 'rgba(255,166,255,0.508)',
                 interactive: true,
             }
                     break;
-                case '2593.0':
+                case '211':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -318,13 +331,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(7,5,28,0.508)',
+                fillColor: 'rgba(255,255,168,0.508)',
                 interactive: true,
             }
                     break;
-                case '3966.0':
+                case '311':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -333,13 +346,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(13,10,42,0.508)',
+                fillColor: 'rgba(128,255,0,0.508)',
                 interactive: true,
             }
                     break;
-                case '6217.0':
+                case '321':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -348,13 +361,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(21,14,56,0.508)',
+                fillColor: 'rgba(204,242,77,0.508)',
                 interactive: true,
             }
                     break;
-                case '11695.0':
+                case '324':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -363,13 +376,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(29,16,72,0.508)',
+                fillColor: 'rgba(166,242,0,0.508)',
                 interactive: true,
             }
                     break;
-                case '13195.0':
+                case '333':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -378,13 +391,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(39,17,88,0.508)',
+                fillColor: 'rgba(204,255,204,0.508)',
                 interactive: true,
             }
                     break;
-                case '19860.0':
+                case '511':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -393,13 +406,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(50,16,102,0.508)',
+                fillColor: 'rgba(0,204,242,0.508)',
                 interactive: true,
             }
                     break;
-                case '22641.0':
+                case '512':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -408,13 +421,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(61,15,113,0.508)',
+                fillColor: 'rgba(128,242,230,0.508)',
                 interactive: true,
             }
                     break;
-                case '23732.0':
+                case '112':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -423,13 +436,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(72,15,120,0.508)',
+                fillColor: 'rgba(255,0,0,0.508)',
                 interactive: true,
             }
                     break;
-                case '26861.0':
+                case '122':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -438,13 +451,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(82,19,124,0.508)',
+                fillColor: 'rgba(204,113,141,0.508)',
                 interactive: true,
             }
                     break;
-                case '29309.0':
+                case '132':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -453,13 +466,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(93,23,127,0.508)',
+                fillColor: 'rgba(166,77,141,0.508)',
                 interactive: true,
             }
                     break;
-                case '32965.0':
+                case '142':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -468,13 +481,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(103,27,129,0.508)',
+                fillColor: 'rgba(255,230,255,0.508)',
                 interactive: true,
             }
                     break;
-                case '34498.0':
+                case '231':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -483,13 +496,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(114,31,129,0.508)',
+                fillColor: 'rgba(230,230,77,0.508)',
                 interactive: true,
             }
                     break;
-                case '36917.0':
+                case '242':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -498,13 +511,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(123,35,130,0.508)',
+                fillColor: 'rgba(255,230,77,0.508)',
                 interactive: true,
             }
                     break;
-                case '39471.0':
+                case '243':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -513,13 +526,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(134,38,129,0.508)',
+                fillColor: 'rgba(230,204,77,0.508)',
                 interactive: true,
             }
                     break;
-                case '43804.0':
+                case '312':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -528,13 +541,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(144,42,129,0.508)',
+                fillColor: 'rgba(0,166,0,0.508)',
                 interactive: true,
             }
                     break;
-                case '45726.0':
+                case '123':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -543,13 +556,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(155,45,128,0.508)',
+                fillColor: 'rgba(230,204,204,0.508)',
                 interactive: true,
             }
                     break;
-                case '47863.0':
+                case '131':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -558,13 +571,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(166,49,125,0.508)',
+                fillColor: 'rgba(166,0,204,0.508)',
                 interactive: true,
             }
                     break;
-                case '59198.0':
+                case '133':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -573,13 +586,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(177,52,123,0.508)',
+                fillColor: 'rgba(255,77,255,0.508)',
                 interactive: true,
             }
                     break;
-                case '65294.0':
+                case '313':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -588,13 +601,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(187,56,120,0.508)',
+                fillColor: 'rgba(77,255,0,0.508)',
                 interactive: true,
             }
                     break;
-                case '67447.0':
+                case '331':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -603,13 +616,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(198,60,116,0.508)',
+                fillColor: 'rgba(230,230,230,0.508)',
                 interactive: true,
             }
                     break;
-                case '71176.0':
+                case '411':
                     return {
-                pane: 'pane_3111Recreation_2',
+                pane: 'pane_MIBRAGCLC_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -618,267 +631,235 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(208,65,112,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '72268.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(218,70,107,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '79163.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(227,78,101,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '81222.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(235,86,97,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '81748.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(241,96,93,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '103191.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(245,108,92,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '164309.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(249,120,92,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '181622.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(251,132,96,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '222957.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(253,144,101,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '234070.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,157,108,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '270093.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,169,115,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '324631.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,182,124,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '350000.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,193,134,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '450000.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,205,144,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '600000.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,217,155,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '620928.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(253,230,167,0.508)',
-                interactive: true,
-            }
-                    break;
-                case '909010.0':
-                    return {
-                pane: 'pane_3111Recreation_2',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.508)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(253,242,179,0.508)',
+                fillColor: 'rgba(166,166,255,0.508)',
                 interactive: true,
             }
                     break;
             }
         }
-        map.createPane('pane_3111Recreation_2');
-        map.getPane('pane_3111Recreation_2').style.zIndex = 402;
-        map.getPane('pane_3111Recreation_2').style['mix-blend-mode'] = 'normal';
-        var layer_3111Recreation_2 = new L.geoJson(json_3111Recreation_2, {
+        map.createPane('pane_MIBRAGCLC_2');
+        map.getPane('pane_MIBRAGCLC_2').style.zIndex = 402;
+        map.getPane('pane_MIBRAGCLC_2').style['mix-blend-mode'] = 'normal';
+        var layer_MIBRAGCLC_2 = new L.geoJson(json_MIBRAGCLC_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_3111Recreation_2',
-            layerName: 'layer_3111Recreation_2',
-            pane: 'pane_3111Recreation_2',
-            onEachFeature: pop_3111Recreation_2,
-            style: style_3111Recreation_2_0,
+            dataVar: 'json_MIBRAGCLC_2',
+            layerName: 'layer_MIBRAGCLC_2',
+            pane: 'pane_MIBRAGCLC_2',
+            onEachFeature: pop_MIBRAGCLC_2,
+            style: style_MIBRAGCLC_2_0,
         });
-        bounds_group.addLayer(layer_3111Recreation_2);
-        map.addLayer(layer_3111Recreation_2);
-        function pop_2261Carbonsequestration_3(feature, layer) {
+        bounds_group.addLayer(layer_MIBRAGCLC_2);
+        map.addLayer(layer_MIBRAGCLC_2);
+        function pop_3111Recreation_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>descriptio</strong><br />' + (feature.properties['descriptio'] !== null ? Autolinker.link(feature.properties['descriptio'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">CLC_lv2</th>\
+                        <td>' + (feature.properties['CLC_lv2'] !== null ? Autolinker.link(feature.properties['CLC_lv2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">CLC_lv3</th>\
+                        <td>' + (feature.properties['CLC_lv3'] !== null ? Autolinker.link(feature.properties['CLC_lv3'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Desc_CLC3</th>\
+                        <td>' + (feature.properties['Desc_CLC3'] !== null ? Autolinker.link(feature.properties['Desc_CLC3'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">AREA [ha]</th>\
+                        <td>' + (feature.properties['AREA [ha]'] !== null ? Autolinker.link(feature.properties['AREA [ha]'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Perimeter[</th>\
+                        <td>' + (feature.properties['Perimeter['] !== null ? Autolinker.link(feature.properties['Perimeter['].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">AREAbyCLC3</th>\
+                        <td>' + (feature.properties['AREAbyCLC3'] !== null ? Autolinker.link(feature.properties['AREAbyCLC3'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">ID Field</th>\
+                        <td>' + (feature.properties['ID Field'] !== null ? Autolinker.link(feature.properties['ID Field'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">AreaCLC3co</th>\
+                        <td>' + (feature.properties['AreaCLC3co'] !== null ? Autolinker.link(feature.properties['AreaCLC3co'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">AreaCLC3su</th>\
+                        <td>' + (feature.properties['AreaCLC3su'] !== null ? Autolinker.link(feature.properties['AreaCLC3su'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Desc_CLC2</th>\
+                        <td>' + (feature.properties['Desc_CLC2'] !== null ? Autolinker.link(feature.properties['Desc_CLC2'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">1111</th>\
+                        <td>' + (feature.properties['1111'] !== null ? Autolinker.link(feature.properties['1111'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">1152</th>\
+                        <td>' + (feature.properties['1152'] !== null ? Autolinker.link(feature.properties['1152'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">2261</th>\
+                        <td>' + (feature.properties['2261'] !== null ? Autolinker.link(feature.properties['2261'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">2262</th>\
+                        <td>' + (feature.properties['2262'] !== null ? Autolinker.link(feature.properties['2262'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">3111</th>\
+                        <td>' + (feature.properties['3111'] !== null ? Autolinker.link(feature.properties['3111'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_3111Recreation_3_0(feature) {
+            if (feature.properties['3111'] >= 0.000000 && feature.properties['3111'] <= 113626.250000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(68,1,84,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 113626.250000 && feature.properties['3111'] <= 227252.500000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(69,50,127,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 227252.500000 && feature.properties['3111'] <= 340878.750000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(54,92,141,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 340878.750000 && feature.properties['3111'] <= 454505.000000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(39,127,142,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 454505.000000 && feature.properties['3111'] <= 568131.250000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(31,162,136,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 568131.250000 && feature.properties['3111'] <= 681757.500000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(74,194,109,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 681757.500000 && feature.properties['3111'] <= 795383.750000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(158,218,57,0.508)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['3111'] >= 795383.750000 && feature.properties['3111'] <= 909010.000000 ) {
+                return {
+                pane: 'pane_3111Recreation_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.508)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(253,231,37,0.508)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_3111Recreation_3');
+        map.getPane('pane_3111Recreation_3').style.zIndex = 403;
+        map.getPane('pane_3111Recreation_3').style['mix-blend-mode'] = 'normal';
+        var layer_3111Recreation_3 = new L.geoJson(json_3111Recreation_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_3111Recreation_3',
+            layerName: 'layer_3111Recreation_3',
+            pane: 'pane_3111Recreation_3',
+            onEachFeature: pop_3111Recreation_3,
+            style: style_3111Recreation_3_0,
+        });
+        bounds_group.addLayer(layer_3111Recreation_3);
+        map.addLayer(layer_3111Recreation_3);
+        function pop_2261Carbonsequestration_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
@@ -949,11 +930,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_2261Carbonsequestration_3_0(feature) {
+        function style_2261Carbonsequestration_4_0(feature) {
             switch(String(feature.properties['2261'])) {
                 case '0.0':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -968,7 +949,7 @@
                     break;
                 case '10.12':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -983,7 +964,7 @@
                     break;
                 case '29.83':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -998,7 +979,7 @@
                     break;
                 case '34.16':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1013,7 +994,7 @@
                     break;
                 case '68.31':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1028,7 +1009,7 @@
                     break;
                 case '72.91':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1043,7 +1024,7 @@
                     break;
                 case '75.71':
                     return {
-                pane: 'pane_2261Carbonsequestration_3',
+                pane: 'pane_2261Carbonsequestration_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1058,21 +1039,21 @@
                     break;
             }
         }
-        map.createPane('pane_2261Carbonsequestration_3');
-        map.getPane('pane_2261Carbonsequestration_3').style.zIndex = 403;
-        map.getPane('pane_2261Carbonsequestration_3').style['mix-blend-mode'] = 'normal';
-        var layer_2261Carbonsequestration_3 = new L.geoJson(json_2261Carbonsequestration_3, {
+        map.createPane('pane_2261Carbonsequestration_4');
+        map.getPane('pane_2261Carbonsequestration_4').style.zIndex = 404;
+        map.getPane('pane_2261Carbonsequestration_4').style['mix-blend-mode'] = 'normal';
+        var layer_2261Carbonsequestration_4 = new L.geoJson(json_2261Carbonsequestration_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_2261Carbonsequestration_3',
-            layerName: 'layer_2261Carbonsequestration_3',
-            pane: 'pane_2261Carbonsequestration_3',
-            onEachFeature: pop_2261Carbonsequestration_3,
-            style: style_2261Carbonsequestration_3_0,
+            dataVar: 'json_2261Carbonsequestration_4',
+            layerName: 'layer_2261Carbonsequestration_4',
+            pane: 'pane_2261Carbonsequestration_4',
+            onEachFeature: pop_2261Carbonsequestration_4,
+            style: style_2261Carbonsequestration_4_0,
         });
-        bounds_group.addLayer(layer_2261Carbonsequestration_3);
-        map.addLayer(layer_2261Carbonsequestration_3);
-        function pop_2262Localclimateregulation_4(feature, layer) {
+        bounds_group.addLayer(layer_2261Carbonsequestration_4);
+        map.addLayer(layer_2261Carbonsequestration_4);
+        function pop_2262Localclimateregulation_5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
@@ -1144,11 +1125,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_2262Localclimateregulation_4_0(feature) {
+        function style_2262Localclimateregulation_5_0(feature) {
             switch(String(feature.properties['2262'])) {
                 case '0.8':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1163,7 +1144,7 @@
                     break;
                 case '0.9':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1178,7 +1159,7 @@
                     break;
                 case '1.0':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1193,7 +1174,7 @@
                     break;
                 case '1.1':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1208,7 +1189,7 @@
                     break;
                 case '1.2':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1223,7 +1204,7 @@
                     break;
                 case '1.3':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1238,7 +1219,7 @@
                     break;
                 case '1.4':
                     return {
-                pane: 'pane_2262Localclimateregulation_4',
+                pane: 'pane_2262Localclimateregulation_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1253,21 +1234,21 @@
                     break;
             }
         }
-        map.createPane('pane_2262Localclimateregulation_4');
-        map.getPane('pane_2262Localclimateregulation_4').style.zIndex = 404;
-        map.getPane('pane_2262Localclimateregulation_4').style['mix-blend-mode'] = 'normal';
-        var layer_2262Localclimateregulation_4 = new L.geoJson(json_2262Localclimateregulation_4, {
+        map.createPane('pane_2262Localclimateregulation_5');
+        map.getPane('pane_2262Localclimateregulation_5').style.zIndex = 405;
+        map.getPane('pane_2262Localclimateregulation_5').style['mix-blend-mode'] = 'normal';
+        var layer_2262Localclimateregulation_5 = new L.geoJson(json_2262Localclimateregulation_5, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_2262Localclimateregulation_4',
-            layerName: 'layer_2262Localclimateregulation_4',
-            pane: 'pane_2262Localclimateregulation_4',
-            onEachFeature: pop_2262Localclimateregulation_4,
-            style: style_2262Localclimateregulation_4_0,
+            dataVar: 'json_2262Localclimateregulation_5',
+            layerName: 'layer_2262Localclimateregulation_5',
+            pane: 'pane_2262Localclimateregulation_5',
+            onEachFeature: pop_2262Localclimateregulation_5,
+            style: style_2262Localclimateregulation_5_0,
         });
-        bounds_group.addLayer(layer_2262Localclimateregulation_4);
-        map.addLayer(layer_2262Localclimateregulation_4);
-        function pop_1152Fibreprovision_5(feature, layer) {
+        bounds_group.addLayer(layer_2262Localclimateregulation_5);
+        map.addLayer(layer_2262Localclimateregulation_5);
+        function pop_1152Fibreprovision_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Name</th>\
@@ -1339,11 +1320,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_1152Fibreprovision_5_0(feature) {
+        function style_1152Fibreprovision_6_0(feature) {
             switch(String(feature.properties['1152'])) {
                 case '0.0':
                     return {
-                pane: 'pane_1152Fibreprovision_5',
+                pane: 'pane_1152Fibreprovision_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1358,7 +1339,7 @@
                     break;
                 case '0.6':
                     return {
-                pane: 'pane_1152Fibreprovision_5',
+                pane: 'pane_1152Fibreprovision_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1373,7 +1354,7 @@
                     break;
                 case '2.35':
                     return {
-                pane: 'pane_1152Fibreprovision_5',
+                pane: 'pane_1152Fibreprovision_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1388,7 +1369,7 @@
                     break;
                 case '4.1':
                     return {
-                pane: 'pane_1152Fibreprovision_5',
+                pane: 'pane_1152Fibreprovision_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1403,21 +1384,21 @@
                     break;
             }
         }
-        map.createPane('pane_1152Fibreprovision_5');
-        map.getPane('pane_1152Fibreprovision_5').style.zIndex = 405;
-        map.getPane('pane_1152Fibreprovision_5').style['mix-blend-mode'] = 'normal';
-        var layer_1152Fibreprovision_5 = new L.geoJson(json_1152Fibreprovision_5, {
+        map.createPane('pane_1152Fibreprovision_6');
+        map.getPane('pane_1152Fibreprovision_6').style.zIndex = 406;
+        map.getPane('pane_1152Fibreprovision_6').style['mix-blend-mode'] = 'normal';
+        var layer_1152Fibreprovision_6 = new L.geoJson(json_1152Fibreprovision_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_1152Fibreprovision_5',
-            layerName: 'layer_1152Fibreprovision_5',
-            pane: 'pane_1152Fibreprovision_5',
-            onEachFeature: pop_1152Fibreprovision_5,
-            style: style_1152Fibreprovision_5_0,
+            dataVar: 'json_1152Fibreprovision_6',
+            layerName: 'layer_1152Fibreprovision_6',
+            pane: 'pane_1152Fibreprovision_6',
+            onEachFeature: pop_1152Fibreprovision_6,
+            style: style_1152Fibreprovision_6_0,
         });
-        bounds_group.addLayer(layer_1152Fibreprovision_5);
-        map.addLayer(layer_1152Fibreprovision_5);
-        function pop_1111FoodProvision_6(feature, layer) {
+        bounds_group.addLayer(layer_1152Fibreprovision_6);
+        map.addLayer(layer_1152Fibreprovision_6);
+        function pop_1111FoodProvision_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
@@ -1489,11 +1470,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_1111FoodProvision_6_0(feature) {
+        function style_1111FoodProvision_7_0(feature) {
             switch(String(feature.properties['1111'])) {
                 case '0.0':
                     return {
-                pane: 'pane_1111FoodProvision_6',
+                pane: 'pane_1111FoodProvision_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1508,7 +1489,7 @@
                     break;
                 case '5.25':
                     return {
-                pane: 'pane_1111FoodProvision_6',
+                pane: 'pane_1111FoodProvision_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1523,7 +1504,7 @@
                     break;
                 case '10.37':
                     return {
-                pane: 'pane_1111FoodProvision_6',
+                pane: 'pane_1111FoodProvision_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1538,7 +1519,7 @@
                     break;
                 case '25.16':
                     return {
-                pane: 'pane_1111FoodProvision_6',
+                pane: 'pane_1111FoodProvision_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.508)',
                 dashArray: '',
@@ -1553,32 +1534,32 @@
                     break;
             }
         }
-        map.createPane('pane_1111FoodProvision_6');
-        map.getPane('pane_1111FoodProvision_6').style.zIndex = 406;
-        map.getPane('pane_1111FoodProvision_6').style['mix-blend-mode'] = 'normal';
-        var layer_1111FoodProvision_6 = new L.geoJson(json_1111FoodProvision_6, {
+        map.createPane('pane_1111FoodProvision_7');
+        map.getPane('pane_1111FoodProvision_7').style.zIndex = 407;
+        map.getPane('pane_1111FoodProvision_7').style['mix-blend-mode'] = 'normal';
+        var layer_1111FoodProvision_7 = new L.geoJson(json_1111FoodProvision_7, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_1111FoodProvision_6',
-            layerName: 'layer_1111FoodProvision_6',
-            pane: 'pane_1111FoodProvision_6',
-            onEachFeature: pop_1111FoodProvision_6,
-            style: style_1111FoodProvision_6_0,
+            dataVar: 'json_1111FoodProvision_7',
+            layerName: 'layer_1111FoodProvision_7',
+            pane: 'pane_1111FoodProvision_7',
+            onEachFeature: pop_1111FoodProvision_7,
+            style: style_1111FoodProvision_7_0,
         });
-        bounds_group.addLayer(layer_1111FoodProvision_6);
-        map.addLayer(layer_1111FoodProvision_6);
+        bounds_group.addLayer(layer_1111FoodProvision_7);
+        map.addLayer(layer_1111FoodProvision_7);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'1111: Food Provision<br /><table><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_6_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_6_5251.png" /></td><td>5.25</td></tr><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_6_10372.png" /></td><td>10.37</td></tr><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_6_25163.png" /></td><td>25.16</td></tr></table>': layer_1111FoodProvision_6,'1152: Fibre provision<br /><table><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_5_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_5_0601.png" /></td><td>0.60</td></tr><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_5_2352.png" /></td><td>2.35</td></tr><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_5_4103.png" /></td><td>4.10</td></tr></table>': layer_1152Fibreprovision_5,'2262: Local climate regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_0800.png" /></td><td>0.80</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_0901.png" /></td><td>0.90</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_1002.png" /></td><td>1.00</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_1103.png" /></td><td>1.10</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_1204.png" /></td><td>1.20</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_1305.png" /></td><td>1.30</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_4_1406.png" /></td><td>1.40</td></tr></table>': layer_2262Localclimateregulation_4,'2261: Carbon sequestration<br /><table><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_10121.png" /></td><td>10.12</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_29832.png" /></td><td>29.83</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_34163.png" /></td><td>34.16</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_68314.png" /></td><td>68.31</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_72915.png" /></td><td>72.91</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_3_75716.png" /></td><td>75.71</td></tr></table>': layer_2261Carbonsequestration_3,'3111: Recreation<br /><table><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_463001.png" /></td><td>463.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_2593002.png" /></td><td>2593.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_3966003.png" /></td><td>3966.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_6217004.png" /></td><td>6217.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_11695005.png" /></td><td>11695.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_13195006.png" /></td><td>13195.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_19860007.png" /></td><td>19860.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_22641008.png" /></td><td>22641.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_23732009.png" /></td><td>23732.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_268610010.png" /></td><td>26861.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_293090011.png" /></td><td>29309.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_329650012.png" /></td><td>32965.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_344980013.png" /></td><td>34498.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_369170014.png" /></td><td>36917.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_394710015.png" /></td><td>39471.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_438040016.png" /></td><td>43804.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_457260017.png" /></td><td>45726.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_478630018.png" /></td><td>47863.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_591980019.png" /></td><td>59198.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_652940020.png" /></td><td>65294.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_674470021.png" /></td><td>67447.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_711760022.png" /></td><td>71176.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_722680023.png" /></td><td>72268.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_791630024.png" /></td><td>79163.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_812220025.png" /></td><td>81222.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_817480026.png" /></td><td>81748.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_1031910027.png" /></td><td>103191.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_1643090028.png" /></td><td>164309.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_1816220029.png" /></td><td>181622.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_2229570030.png" /></td><td>222957.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_2340700031.png" /></td><td>234070.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_2700930032.png" /></td><td>270093.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_3246310033.png" /></td><td>324631.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_3500000034.png" /></td><td>350000.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_4500000035.png" /></td><td>450000.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_6000000036.png" /></td><td>600000.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_6209280037.png" /></td><td>620928.00</td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_2_9090100038.png" /></td><td>909010.00</td></tr></table>': layer_3111Recreation_2,'<img src="legend/LIMIT_1.png" /> LIMIT': layer_LIMIT_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
+        L.control.layers(baseMaps,{'1111: Food Provision<br /><table><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_7_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_7_5251.png" /></td><td>5.25</td></tr><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_7_10372.png" /></td><td>10.37</td></tr><tr><td style="text-align: center;"><img src="legend/1111FoodProvision_7_25163.png" /></td><td>25.16</td></tr></table>': layer_1111FoodProvision_7,'1152: Fibre provision<br /><table><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_6_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_6_0601.png" /></td><td>0.60</td></tr><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_6_2352.png" /></td><td>2.35</td></tr><tr><td style="text-align: center;"><img src="legend/1152Fibreprovision_6_4103.png" /></td><td>4.10</td></tr></table>': layer_1152Fibreprovision_6,'2262: Local climate regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_0800.png" /></td><td>0.80</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_0901.png" /></td><td>0.90</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_1002.png" /></td><td>1.00</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_1103.png" /></td><td>1.10</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_1204.png" /></td><td>1.20</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_1305.png" /></td><td>1.30</td></tr><tr><td style="text-align: center;"><img src="legend/2262Localclimateregulation_5_1406.png" /></td><td>1.40</td></tr></table>': layer_2262Localclimateregulation_5,'2261: Carbon sequestration<br /><table><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_0000.png" /></td><td>0.00</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_10121.png" /></td><td>10.12</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_29832.png" /></td><td>29.83</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_34163.png" /></td><td>34.16</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_68314.png" /></td><td>68.31</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_72915.png" /></td><td>72.91</td></tr><tr><td style="text-align: center;"><img src="legend/2261Carbonsequestration_4_75716.png" /></td><td>75.71</td></tr></table>': layer_2261Carbonsequestration_4,'3111: Recreation<br /><table><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_01136260.png" /></td><td>0 - 113626 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_1136262272531.png" /></td><td>113626 - 227253 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_2272533408792.png" /></td><td>227253 - 340879 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_3408794545053.png" /></td><td>340879 - 454505 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_4545055681314.png" /></td><td>454505 - 568131 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_5681316817585.png" /></td><td>568131 - 681758 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_6817587953846.png" /></td><td>681758 - 795384 </td></tr><tr><td style="text-align: center;"><img src="legend/3111Recreation_3_7953849090107.png" /></td><td>795384 - 909010 </td></tr></table>': layer_3111Recreation_3,'MIBRAG CLC<br /><table><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_121Industrialorcommercialunits0.png" /></td><td>121: Industrial or commercial units</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_141Greenurbanareas1.png" /></td><td>141: Green urban areas</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_211Nonirrigatedarableland2.png" /></td><td>211: Non-irrigated arable land</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_311Broadleavedforest3.png" /></td><td>311: Broad-leaved forest</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_321Naturalgrasslands4.png" /></td><td>321: Natural grasslands</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_324Transitionalwoodlandshrub5.png" /></td><td>324: Transitional woodland-shrub</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_333Sparselyvegetatedareas6.png" /></td><td>333: Sparsely vegetated areas</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_511Watercourses7.png" /></td><td>511: Water courses</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_512Waterbodies8.png" /></td><td>512: Water bodies</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_112Discontinuousurbanfabric9.png" /></td><td>112: Discontinuous urban fabric</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_122Roadandrailnetworksandassociatedland10.png" /></td><td>122: Road and rail networks and associated land</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_132Dumpsites11.png" /></td><td>132: Dump sites</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_142Sportandleisurefacilities12.png" /></td><td>142: Sport and leisure facilities</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_231Pastures13.png" /></td><td>231: Pastures</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_242Complexcultivationpatterns14.png" /></td><td>242: Complex cultivation patterns</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_243Landprincipallyoccupiedbyagriculturewithsignificantareasofnaturalvegetation15.png" /></td><td>243: Land principally occupied by agriculture, with significant areas of natural vegetation</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_312Coniferousforest16.png" /></td><td>312: Coniferous forest</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_123PortAreas17.png" /></td><td>123: Port Areas</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_131MineralExtractionsites18.png" /></td><td>131: Mineral Extraction sites</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_133Constructionsites19.png" /></td><td>133: Construction sites</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_313Mixedforest20.png" /></td><td>313: Mixed forest</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_331Beachesdunessands21.png" /></td><td>331: Beaches, dunes, sands</td></tr><tr><td style="text-align: center;"><img src="legend/MIBRAGCLC_2_411Inlandmarshes22.png" /></td><td>411: Inland marshes</td></tr></table>': layer_MIBRAGCLC_2,'<img src="legend/LIMIT_1.png" /> LIMIT': layer_LIMIT_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
         setBounds();
-        resetLabels([layer_3111Recreation_2,layer_2261Carbonsequestration_3,layer_2262Localclimateregulation_4,layer_1152Fibreprovision_5,layer_1111FoodProvision_6]);
+        resetLabels([layer_MIBRAGCLC_2,layer_3111Recreation_3,layer_2261Carbonsequestration_4,layer_2262Localclimateregulation_5,layer_1152Fibreprovision_6,layer_1111FoodProvision_7]);
         map.on("zoomend", function(){
-            resetLabels([layer_3111Recreation_2,layer_2261Carbonsequestration_3,layer_2262Localclimateregulation_4,layer_1152Fibreprovision_5,layer_1111FoodProvision_6]);
+            resetLabels([layer_MIBRAGCLC_2,layer_3111Recreation_3,layer_2261Carbonsequestration_4,layer_2262Localclimateregulation_5,layer_1152Fibreprovision_6,layer_1111FoodProvision_7]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_3111Recreation_2,layer_2261Carbonsequestration_3,layer_2262Localclimateregulation_4,layer_1152Fibreprovision_5,layer_1111FoodProvision_6]);
+            resetLabels([layer_MIBRAGCLC_2,layer_3111Recreation_3,layer_2261Carbonsequestration_4,layer_2262Localclimateregulation_5,layer_1152Fibreprovision_6,layer_1111FoodProvision_7]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_3111Recreation_2,layer_2261Carbonsequestration_3,layer_2262Localclimateregulation_4,layer_1152Fibreprovision_5,layer_1111FoodProvision_6]);
+            resetLabels([layer_MIBRAGCLC_2,layer_3111Recreation_3,layer_2261Carbonsequestration_4,layer_2262Localclimateregulation_5,layer_1152Fibreprovision_6,layer_1111FoodProvision_7]);
         });
         </script>
     </body>
